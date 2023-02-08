@@ -14,11 +14,13 @@ namespace StatisticArray
             }
 
             Console.WriteLine("count="+OptionsManager.CountLess100(arr));
-            Console.WriteLine($"sum={OptionsManager.MaxNum(arr)}");
+            Console.WriteLine($"Max={OptionsManager.MaxNum(arr)}");
             OptionsManager.PrintEvensNum(arr);
-            arr=OptionsManager.ReverseArr(arr);
+            Console.WriteLine("Sum =" +OptionsManager.SumEvenNumbers(arr));
+            Console.WriteLine("Count =" + OptionsManager.CountEvenNumbers(arr));
+            arr =OptionsManager.ReverseArr(arr);
             OptionsManager.PrintArr(arr);
-            // TO DO
+            
         }
     }
 }

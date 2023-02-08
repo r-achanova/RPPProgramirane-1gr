@@ -33,5 +33,15 @@ namespace StatisticArray
             var result = arr.Where(x => x % 2 == 0).ToArray();
             Console.WriteLine(string.Join(", ", result));
         }
+
+        public static int SumEvenNumbers(int[] arr)
+        {
+            return arr.Where(x => x % 2 == 0).Sum();
+        }
+
+        public static int CountEvenNumbers(int[] arr)
+        {
+            return arr.Where(x => x % 2 == 0).Count();
+        }
     }
 }
