@@ -48,7 +48,7 @@ namespace StatisticArray
         {
             var result = arr.Where(x => x % 2 == 1).ToArray();
             Console.WriteLine(string.Join(", ", result));
-
+        }
         public static int CountOddNumbers(int[] arr)
         {
             return arr.Where(x => x % 2 == 1).Count();
