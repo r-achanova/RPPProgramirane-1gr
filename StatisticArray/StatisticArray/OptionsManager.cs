@@ -43,5 +43,9 @@ namespace StatisticArray
         {
             return arr.Where(x => x % 2 == 0).Count();
         }
+        public static int CountOddNumbers(int[] arr)
+        {
+            return arr.Where(x => x % 2 == 1).Count();
+        }
     }
 }
