@@ -43,5 +43,10 @@ namespace StatisticArray
         {
             return arr.Where(x => x % 2 == 0).Count();
         }
+        public static void PrintOddsNum(int[] arr)
+        {
+            var result = arr.Where(x => x % 2 == 1).ToArray();
+            Console.WriteLine(string.Join(", ", result));
+        }
     }
 }
